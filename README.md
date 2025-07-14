@@ -52,7 +52,7 @@ dict_name = {
 ✅ Examples of Valid Keys and Values:
 ```
 * All key types are valid:
-```
+```python
 my_dict = {
     "name": "Pavani",        # str key -> str value
     101: "roll number",      # int key -> str value
@@ -66,7 +66,7 @@ my_dict = {
 ❌ Invalid Key Example (causes error):
 ```
 * list cannot be a key:
-```
+```python
 invalid_dict = {
     [1, 2]: "not allowed"  # ❌ Error: unhashable type: 'list'
 }
@@ -75,34 +75,34 @@ invalid_dict = {
 
 1. Using Square Brackets (raises error if key not found):
 
-```
+```python
 print(my_dict["name"])  * Pavani
 ```
 2. Using .get() method (safe way):
 
-```
+```python
 print(my_dict.get("marks"))        # [90, 95, 88]
 print(my_dict.get("grade", "N/A")) # N/A (default if not found)
 ```
 ✅ Looping through a Dictionary:
 
 🔹 Loop through keys:
-```
+```python
 for key in my_dict:
     print(key)
 ```
 🔹 Loop through values:
-```
+```python
 for value in my_dict.values():
     print(value)
 ```
 🔹 Loop through key-value pairs:
-```
+```python
 for key, value in my_dict.items():
     print(key, ":", value)
 ```
 🧪 Example Program: Student Info:
-```
+```python
 student = {
     "name": "Charan",
     "age": 22,
